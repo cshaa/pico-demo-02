@@ -17,9 +17,9 @@ pico_sdk_init()
 add_executable(main main.c)
 
 if(PICO_W)
-  target_link_libraries(main pico_stdlib pico_cyw43_arch_none)
+  target_link_libraries(main pico_stdlib hardware_pwm pico_cyw43_arch_none)
 else()
-  target_link_libraries(main pico_stdlib)
+  target_link_libraries(main pico_stdlib hardware_pwm)
 endif()
 
 pico_enable_stdio_usb(main 1)
