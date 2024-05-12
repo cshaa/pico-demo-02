@@ -1,6 +1,6 @@
 # Raspberry Pi Pico – Demo Project
 
-Softly blinks an external LED via PWM and prints "Hello World (elapsed time)" to the USB tty.
+Waits for a key press over UART, then performs a PWM benchmark and prints the results. Then proceeds to softly blink two external LEDs 🚔️.
 
 ```sh
 make build
